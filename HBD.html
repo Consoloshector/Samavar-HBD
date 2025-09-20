@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    body .lecekler {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    body .lecekler img:nth-child(1) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        transform: rotate(45deg) translateX(-200px);
+    }
+
+    body .lecekler img:nth-child(2) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(3) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(4) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(5) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(6) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(7) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(8) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(9) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(10) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(11) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(12) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(13) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(14) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .lecekler img:nth-child(15) {
+        width: 150px;
+        height: 200px;
+        position: absolute;
+    }
+
+    body .yellow {
+        position: absolute;
+        background: linear-gradient(to right, yellow, orange);
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        transform: translateX(-80px) translateY(-80px);
+
+    }
+
+    body .sap {
+        background: green;
+        width: 10px;
+        height: 400px;
+    }
+
+    #msg {
+        display: none;
+        font-size: 32px;
+        color: purple;
+        text-align: center;
+        margin-top: 30px;
+        font-family: cursive;
+    }
+
+    @media(max-width:400px) {
+
+        body {
+            padding: 45px 213px;
+        }
+
+        body .yellow {
+            width: 120px;
+            height: 120px;
+            transform: translateX(-57px) translateY(-110px);
+        }
+
+        body .sap {
+            background: green;
+            width: 10px;
+            height: 250px;
+        }
+
+        body .lecekler img:nth-child(1) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(21deg) translateX(-116px) translateY(20px);
+        }
+
+        body .lecekler img:nth-child(2) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(49deg) translateX(-149px) translateY(78px);
+        }
+
+        body .lecekler img:nth-child(3) {
+            width: 155px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(70deg) translateX(-165px) translateY(138px);
+        }
+
+        body .lecekler img:nth-child(4) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(111deg) translateX(-106px) translateY(222px);
+        }
+
+        body .lecekler img:nth-child(5) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(137deg) translateX(-52px) translateY(246px);
+        }
+
+        body .lecekler img:nth-child(6) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(159deg) translateX(-10px) translateY(249px);
+        }
+
+        body .lecekler img:nth-child(7) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(180deg) translateX(29px) translateY(235px);
+        }
+
+        body .lecekler img:nth-child(8) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(-58deg) translateX(14px) translateY(-22px);
+        }
+
+        body .lecekler img:nth-child(9) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(98deg) translateX(-64px) translateY(-4px);
+        }
+
+        body .lecekler img:nth-child(10) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(71deg) translateX(-87px) translateY(-71px);
+        }
+
+        body .lecekler img:nth-child(11) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(71deg) translateX(-88px) translateY(-70px);
+        }
+
+        body .lecekler img:nth-child(12) {
+            width: 188px;
+            height: 165px;
+            position: absolute;
+            transform: rotate(23deg) translateX(-86px) translateY(-173px);
+        }
+
+        body .lecekler img:nth-child(13) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(56deg) translateX(-102px) translateY(-113px);
+        }
+
+        body .lecekler img:nth-child(14) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(-196deg) translateX(60px) translateY(32px);
+        }
+
+        body .lecekler img:nth-child(15) {
+            width: 136px;
+            height: 153px;
+            position: absolute;
+            transform: rotate(98deg) translateX(-116px) translateY(197px);
+        }
+
+    }
+</style>
+
+<body>
+
+    <audio id="ucl" autoplay hidden loop>
+            <source src="up_pixar.mp3" type="audio/mpeg">
+        </audio>
+         <i style="font-size: 2rem; color: white; margin-top: -600px;" onclick="document.getElementById('ucl').play()" class="fa-solid fa-volume-high"></i>
+
+    <div>
+        <div class="lecekler">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+            <img src="lecek.png" alt="">
+        </div>
+
+        <div class="yellow">
+
+        </div>
+
+        <div class="sap">
+
+        </div>
+
+        <button id="btn">TIKLA</button>
+
+        <h1 id="msg"> AD GÜNÜN MÜBARƏK ZOĞAL</h1>
+    </div>
+
+   <script>
+    $(document).ready(function () {
+        const lecekler = $(".lecekler img");
+        const sap = $(".sap");
+        const yellow = $(".yellow");
+        const msg = $("#msg");
+        let index = 0;
+        let direction = "open";
+
+        // əvvəlcə gizlət
+        lecekler.hide();
+        sap.hide();
+        yellow.hide();
+
+        $("#btn").click(function () {
+            if (direction === "open") {
+                if (index === 0) {
+                    sap.fadeIn(400);
+                    yellow.fadeIn(400);
+                } else if (index <= lecekler.length) {
+                    $(lecekler[index - 1]).fadeIn(400);
+                }
+                index++;
+
+                if (index > lecekler.length) {
+                    direction = "close";
+                }
+            } else {
+                if (index > 0) {
+                    index--;
+                    $(lecekler[index]).fadeOut(400);
+                } else {
+                    sap.fadeOut(400);
+                    yellow.fadeOut(400, function () {
+                        // bütün proses bitəndə mesaj göstər
+                        msg.fadeIn(700);
+                        $("#btn").prop("disabled", true).text("🎂");
+                    });
+                    direction = "open";
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
